@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-flow: column wrap;
+  
 }
 
 .header {
@@ -21,18 +22,39 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .sidebar {
-  width: 300px;
   background: royalblue;
   display: flex;
   flex-direction: column;
+  min-height: 83vh;
+  flex: 1 0 300px;
+  padding-left: 0px;
+}
+
+a {
+  color:white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 16px;
 }
 
 .card-container {
   display: flex;
   flex-flow: row wrap;
+  min-height: 83vh;
+  gap: 32px;
+  padding: 32px;
+  flex: 1 1 content;
 
 }
 
@@ -40,4 +62,18 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 16px;
+  margin: 12px;
+  flex: 1 1 content;
+  min-height: min-content;
+  max-height: 250px;
+  min-width: min-content;
+  max-width: 350px;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
 }
